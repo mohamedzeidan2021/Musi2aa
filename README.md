@@ -1,2 +1,2 @@
 # Musi2aa
-Listen to music with friends!
+Upload your favorite videos!
