@@ -3,7 +3,7 @@ import ffmpeg from 'fluent-ffmpeg';
 
 const app = express();
 app.use(express.json());
-ffmpeg.setFfmpegPath('C:\\ffmpeg\\ffmpeg-2023-11-09-git-acf63d5350-full_build\\bin\\ffmpeg.exe');
+ffmpeg.setFfmpegPath('C:/ffmpeg/ffmpeg-2023-11-09-git-acf63d5350-full_build/bin/ffmpeg.exe');
 
 app.post('/process-video', (req, res) => {
 
@@ -11,7 +11,7 @@ app.post('/process-video', (req, res) => {
   const inputFilePath = req.body.inputFilePath;
   const outputFilePath = req.body.outputFilePath;
 
-  // Check if the input file path is defined
+  // Check if the input file pa th is defined
   if (!inputFilePath || !outputFilePath) {
     return res.status(400).send('Bad Request: Missing file path');
   }
